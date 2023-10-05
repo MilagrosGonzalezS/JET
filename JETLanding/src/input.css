@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+  --clr-accent: #8b5f6d;
+  --clr-hover: #a14865;
+  --clr-dark: #424242;
+  --clr-light: #f1e2e7;
+}
+
+@font-face {
+  font-family: "HeadingNow";
+  src: url("./assets/fonts/HeadingNow-95Medium.otf") format("woff2");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./assets/fonts/Helvetica Neue UltraLight.ttf") format("woff2");
+}
+
+body,
+#drawer-right-example {
+  background-image: url("./assets/imgs/bg-pink.webp");
+}
+
+.about {
+  background-image: url("./assets/imgs/bg-about.png");
+}
+
+.subtitle {
+  letter-spacing: 8px;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--clr-accent);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
